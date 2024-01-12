@@ -176,7 +176,7 @@
                             {{$movie->name}}
                         </a>
                     </span>
-                    <div class="count_view">{{$movie->view_day}} Views</div>
+                    <div class="count_view">{{ motchill_format_view($movie->view_day) }} lượt xem</div>
                 </li>
             @endforeach
 
@@ -188,7 +188,7 @@
                             {{$movie->name}}
                         </a>
                     </span>
-                    <div class="count_view">{{$movie->view_week}} Views</div>
+                    <div class="count_view">{{ motchill_format_view($movie->view_week) }} lượt xem</div>
                 </li>
             @endforeach
 
@@ -200,7 +200,7 @@
                             {{$movie->name}}
                         </a>
                     </span>
-                    <div class="count_view">{{$movie->view_month}} Views</div>
+                    <div class="count_view">{{ motchill_format_view($movie->view_month) }} lượt xem</div>
                 </li>
             @endforeach
         </ul>
