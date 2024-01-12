@@ -13,6 +13,13 @@ class ThemeMotchillServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        try {
+            foreach (glob(__DIR__ . '/Helpers/*.php') as $filename) {
+                require_once $filename;
+            }
+        } catch (\Exception $e) {
+            //throw $e;
+        }
         $this->loadViewsFrom(__DIR__ . '/../resources/views/', 'themes');
 
         $this->publishes([
