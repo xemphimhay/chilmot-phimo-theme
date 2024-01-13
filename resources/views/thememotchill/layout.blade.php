@@ -116,7 +116,6 @@
     <script src="/themes/motchill/efc0d744/yii.js"></script>
     <script src="/themes/motchill/static/js/flickity.smart.min.js"></script>
     <script src="/themes/motchill/static/js/main.js?v=4"></script>
-    {{-- <script src="/themes/motchill/js/ads_xx.js?v=7"></script> --}}
 
     <div id="footer_fixed_ads"></div>
 
