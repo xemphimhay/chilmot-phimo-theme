@@ -458,6 +458,15 @@
             }
         }
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS3QDZZKSW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FS3QDZZKSW');
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const episode = '{{ $episode->id }}';
